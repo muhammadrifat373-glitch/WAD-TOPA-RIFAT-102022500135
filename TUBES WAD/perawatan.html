@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perawatan - Armada Gudang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>Armada Gudang</h2>
+
+        <a href="index.html">Dashboard</a>
+        <a href="armada.html">Data Armada</a>
+        <a href="perawatan.html" class="active">Perawatan</a>
+
+    </div>
+
+    <div class="content">
+
+        <div class="header">
+            <h1>Perawatan</h1>
+            <p>Data perawatan kendaraan operasional gudang</p>
+        </div>
+
+        <div class="box">
+
+            <div class="box-header">
+
+                <h3>Data Perawatan</h3>
+
+                <button>+ Tambah Perawatan</button>
+
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nomor Seri</th>
+                        <th>Jenis Armada</th>
+                        <th>Tanggal</th>
+                        <th>Perawatan</th>
+                        <th>Keterangan</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>FL-001</td>
+                        <td>Forklift</td>
+                        <td>20/09/2026</td>
+                        <td>Ganti Oli</td>
+                        <td>Oli mesin diganti</td>
+                        <td>Selesai</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>FL-002</td>
+                        <td>Forklift</td>
+                        <td>22/09/2026</td>
+                        <td>Servis Mesin</td>
+                        <td>Menunggu sparepart</td>
+                        <td>Proses</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>TR-001</td>
+                        <td>Troli</td>
+                        <td>23/09/2026</td>
+                        <td>Pemeriksaan</td>
+                        <td>Kondisi normal</td>
+                        <td>Selesai</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>PU-001</td>
+                        <td>Pick-up<td>
+                        <td>Servis Rutin</td>
+                        <td>Servis selesai</td>
+                        <td>Selesai</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+                    
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="box">
+
+            <h3>Tambah Perawatan</h3>
+
+            <form>
+
+                <label>Nomor Seri Armada</label>
+                <select>
+                    <option>FL-001</option>
+                    <option>FL-002</option>
+                    <option>TR-001</option>
+                    <option>TR-002</option>
+                    <option>PU-001</option>
+                </select>
+
+                <label>Tanggal Perawatan</label>
+                <input type="date">
+
+                <label>Jenis Perawatan</label>
+                <input
+                    type="text"
+                    placeholder="Contoh: Ganti Oli"
+                >
+
+                <label>Keterangan</label>
+                <textarea
+                    placeholder="Masukkan keterangan"
+                ></textarea>
+
+                <label>Status</label>
+                <select>
+                    <option>Selesai</option>
+                    <option>Proses</option>
+                </select>
+
+                <button type="submit">Simpan</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

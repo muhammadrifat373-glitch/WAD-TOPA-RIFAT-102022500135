@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Armada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>Armada Gudang</h2>
+
+        <a href="index.html">Dashboard</a>
+        <a href="armada.html" class="active">Data Armada</a>
+        <a href="perawatan.html">Perawatan</a>
+
+    </div>
+
+
+    <div class="content">
+
+        <div class="header">
+            <h1>Data Armada</h1>
+            <p>Data kendaraan operasional gudang</p>
+        </div>
+
+        <div class="box">
+
+            <div class="box-header">
+                <h3>Daftar Armada</h3>
+
+                <button>+ Tambah Armada</button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Jenis</th>
+                        <th>Nomor Seri</th>
+                        <th>Merk</th>
+                        <th>Kondisi</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Forklift</td>
+                        <td>FL-001</td>
+                        <td>Toyota</td>
+                        <td>Baik</td>
+                        <td>Aktif</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Forklift</td>
+                        <td>FL-002</td>
+                        <td>Komatsu</td>
+                        <td>Baik</td>
+                        <td>Aktif</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Troli</td>
+                        <td>TR-001</td>
+                        <td>-</td>
+                        <td>Baik</td>
+                        <td>Aktif</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Troli</td>
+                        <td>TR-002</td>
+                        <td>-</td>
+                        <td>Perlu Servis</td>
+                        <td>Maintenance</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Pick-up</td>
+                        <td>PU-001</td>
+                        <td>Mitsubishi</td>
+                        <td>Baik</td>
+                        <td>Aktif</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="hapus">Hapus</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="box">
+
+            <h3>Tambah Armada</h3>
+
+            <form>
+
+                <label>Jenis Armada</label>
+                <select>
+                    <option>Forklift</option>
+                    <option>Troli</option>
+                    <option>Pick-up</option>
+                </select>
+
+                <label>Nomor Seri</label>
+                <input type="text" placeholder="Contoh: FL-001">
+
+                <label>Merk</label>
+                <input type="text" placeholder="Masukkan merk">
+
+                <label>Kondisi</label>
+                <select>
+                    <option>Baik</option>
+                    <option>Perlu Servis</option>
+                    <option>Rusak</option>
+                </select>
+
+
+                <label>Status</label>
+                <select>
+                    <option>Aktif</option>
+                    <option>Maintenance</option>
+                    <option>Tidak Aktif</option>
+                </select>
+
+                <button type="submit">Simpan</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
